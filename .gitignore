@@ -5,3 +5,4 @@ spatial_calibration/.idea
 data_process/.idea
 adb_retrieve_command.txt
 .idea/*
+venv/*

@@ -158,6 +158,9 @@ def compute_rotation_matrix_from_quaternion(q):
     return matrix
 
 
+plot_computed_vectors = True
+plot_optitrack_vectors = False
+
 if __name__ == "__main__":
     # PART 1
     # Following code is used to compute rigid bodies orientation and the transformation matrix using optitrack positions
@@ -207,7 +210,8 @@ if __name__ == "__main__":
     vectors_length = np.linalg.norm(stonex[1] - stonex_ref_point)*2
     print(f"Stonex vectors:\n{np.array([stonex_vx, stonex_vy, stonex_vz]).transpose()}")
     # Finally plot the vectors with origin in the reference point of the rigid body
-    plot_vectors(ax, stonex_ref_point, [stonex_vx, stonex_vy, stonex_vz], vectors_length)
+    if plot_computed_vectors:
+        plot_vectors(ax, stonex_ref_point, [stonex_vx, stonex_vy, stonex_vz], vectors_length)
 
     # Plot all the smartphone edges using black (k) circle marker (o) with solid lines (-) between them
     plot_rigid_body(ax, smartphone, "ko-", "smartphone", True)
@@ -218,7 +222,8 @@ if __name__ == "__main__":
                                                                points_for_parallel=(1, 0), invert_x_y_computation=True)
     print(f"Smartphone vectors:\n{np.array([smartphone_vx, smartphone_vy, smartphone_vz]).transpose()}\n")
     # Finally plot the vectors with origin in the reference point of the rigid body
-    plot_vectors(ax, smartphone_ref_point, [smartphone_vx, smartphone_vy, smartphone_vz], vectors_length)
+    if plot_computed_vectors:
+        plot_vectors(ax, smartphone_ref_point, [smartphone_vx, smartphone_vy, smartphone_vz], vectors_length)
 
     # Find the rotation matrix between smartphone and stonex
     smart_to_stone_rm = compute_rotation_matrix_from_vectors([smartphone_vx, smartphone_vy, smartphone_vz],
@@ -324,19 +329,21 @@ if __name__ == "__main__":
     # print(f"Matmul stonex matrix on identity:\n{stonex_orientation}")
     # print(f"Matmul smartphone matrix on identity:\n{smartphone_orientation}")
 
-    plot_vectors(ax, stonex_ref_point,
-                 [stonex_matrix.transpose()[0],
-                  stonex_matrix.transpose()[1],
-                  stonex_matrix.transpose()[2]],
-                 np.linalg.norm(stonex[1] - stonex_ref_point) * 2,
-                 colour_scheme="cmy")
+    if plot_optitrack_vectors:
+        plot_vectors(ax, stonex_ref_point,
+                     [stonex_matrix.transpose()[0],
+                      stonex_matrix.transpose()[1],
+                      stonex_matrix.transpose()[2]],
+                     np.linalg.norm(stonex[1] - stonex_ref_point) * 2,
+                     colour_scheme="cmy")
 
-    plot_vectors(ax, smartphone_ref_point,
-                 [smartphone_matrix.transpose()[0],
-                  smartphone_matrix.transpose()[1],
-                  smartphone_matrix.transpose()[2]],
-                 np.linalg.norm(stonex[1] - stonex_ref_point) * 2,
-                 colour_scheme="cmy")
+        plot_vectors(ax, smartphone_ref_point,
+                     [smartphone_matrix.transpose()[0],
+                      smartphone_matrix.transpose()[1],
+                      smartphone_matrix.transpose()[2]],
+                     np.linalg.norm(stonex[1] - stonex_ref_point) * 2,
+                     colour_scheme="cmy")
 
-    ax.view_init(elev=-20, azim=0, roll=90)
-    plt.show()
+    if plot_computed_vectors or plot_optitrack_vectors:
+        ax.view_init(elev=-20, azim=0, roll=90)
+        plt.show()
