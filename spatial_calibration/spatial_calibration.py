@@ -162,6 +162,7 @@ plot_computed_vectors = True
 plot_optitrack_vectors = False
 
 if __name__ == "__main__":
+    # TODO: Run it multple times in a loop to average out the transformation matrices for different optitrack acquisitions?
     # PART 1
     # Following code is used to compute rigid bodies orientation and the transformation matrix using optitrack positions
     print("COMPUTATIONS BASED ON VECTORS MANUALLY COMPUTED FROM POINTS")
@@ -171,8 +172,8 @@ if __name__ == "__main__":
         points_reader = csv.reader(csvfile)
         for row in points_reader:
             if row and float_convertable(row[-1]):  # If the row is composed of float (just check the last element)
-                # Skip index (frame_number, time_stamp) and extract all available points and Invert X_Z due to some
-                points = get_points_list(row, invert_x_z_retrieval=False, print_points=False)  # problems on our data
+                # Skip index (frame_number, time_stamp) and extract all available points
+                points = get_points_list(row, invert_x_z_retrieval=False, print_points=False)
                 stonex = points[2:7]  # Elements 0 and 1: position and rotation of stonex rigid body, we skip them
                 print(f"Stonex points:\n{stonex}]")
                 smartphone = points[9:13]  # Element 7 and 8: position and rotation of smartphone rigid body, skip them
@@ -316,9 +317,9 @@ if __name__ == "__main__":
 
     rotation_matrix_between = rotation_matrix_between_systems(smartphone_matrix, stonex_matrix)
     rotation_between = R.from_matrix(rotation_matrix_between)
-    print(f"Between rotation matrix:\n{rotation_matrix_between}")
-    print(f"Between quaternion difference:\n{rotation_between.as_quat()}")
-    print(f"Between euler difference:\n{rotation_between.as_euler('xyz', degrees=True)}")
+    print(f"Difference between rotation matrices:\n{rotation_matrix_between}")
+    print(f"Difference between quaternions:\n{rotation_between.as_quat()}")
+    print(f"Difference between eulers:\n{rotation_between.as_euler('xyz', degrees=True)}")
 
 
     # ax.plot(stonex_opt_center[0], stonex_opt_center[1], stonex_opt_center[2], "yo-")
