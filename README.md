@@ -71,5 +71,7 @@ JOURNAL NAME.
 ## Contacts
 
 Lorenzo Orlandi - lorenzo.orlandi@{arcoda.it,unitn.it}
+
 Kevin Depedri - {kevin.depedri}@studenti.unitn.it
+
 Nicola Conci - {nicola.conci}@unitn.it
