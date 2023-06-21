@@ -35,7 +35,7 @@ The 3D digitalization of contents and their visualization using Augmented Realit
 
 
 ## Software implementation
-All source code used to generate the results and figures in the paper can be find in the folders of this repository. More in details, the script used to compute the calibration matrix between the GNSS-RTK receiver and the Smartphone is located in the folder ``spatial_calibration``. In the same way the notebooks used to model the temporal delay between the two devices can be find in the folder ``temporal_calibration``. The folder ``general_data_processing`` encompasses some other notebooks used to process initial data coming from the two devices and are not discussed in the paper.
+All source code used to generate the results and figures in the paper can be find in the folders of this repository. More in detail, the script used to compute the calibration matrix between the GNSS-RTK receiver and the Smartphone is located in the folder ``spatial_calibration``. In the same way the notebooks used to model the temporal delay between the two devices can be find in the folder ``temporal_calibration``. The folder ``general_data_processing`` encompasses some other notebooks used to process initial data coming from the two devices and are not discussed in the paper.
 
 The calculations and figure generation are all run inside [Jupyter notebooks](http://jupyter.org/) or python scripts powered by the [PyCharm IDE](https://www.jetbrains.com/pycharm/).
 The data used for each calibration procedure is present in the relative ``files`` subfolder.
