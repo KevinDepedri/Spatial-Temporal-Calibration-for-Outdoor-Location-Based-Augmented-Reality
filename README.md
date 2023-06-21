@@ -9,8 +9,6 @@ This paper has been submitted for publication in *IEEE MMSP 2023*.
 
 In this paper we tackle the problem of accuracy for AR solutions developed using the location-based approach, where the pose of the AR contents that need to be visualized is expressed using geographic coordinates. More in detail, we propose a novel procedure to perform the spatial calibration between the smartphone used to visualize AR contents and an external GNSS-RTK receiver, used to acquire the position of the user in the world with centimeter-accuracy. Later, we face all the issue related to the temporal calibration between the two devices, proposing an experimental solution to model the delay between the devices and to mitigate it. Finally, the entire pipeline used to visualize AR contents depending on their geographical coordinates is described, explaining how each part of it works. 
 
-The first two videos attached to this repository show the impact of the spatial calibration and of the temporal calibration on the visualization of holograms. The third video shows how it is possible to acquire a geo-referenced dataset by reversing the pipeline discussed in the paper. Later, such geo-referenced dataset can be used to reconstruct the 3D model of the acquired scene, which, thanks to the camera pose of the images is inclusive of its scale information and of the pose to geo-localise it. Finally, the fourth video shows how the reconstructed model can be visualized in AR exploiting the pipeline previously defined.
-
 <!-- 
 ![](manuscript/figures/hawaii-trend.png)
 
@@ -21,6 +19,12 @@ The first two videos attached to this repository show the impact of the spatial 
 The 3D digitalization of contents and their visualization using Augmented Reality (AR) has gained a significant interest within the scientific community. Researchers from various fields have recognized the potential of these technologies and have been actively exploring their applications and implications. The potential lies in the ability to provide users with easy access to digitized information by seamlessly integrating contents directly into their field of view. One of the most promising approaches for outdoor scenarios is the so-called location-based AR, where contents are displayed by leveraging satellite positioning (as GNSS) combined with inertial (as IMUs) sensors. Although the number of application fields are numerous, the accuracy of the over-imposition of the additional contents still hinders a widespread adoption of such technologies. In this paper we propose the combination of a GNSS device equipped with real-time kinematic position (RTK), and a regular smartphone, implementing a novel offline calibration process that relies on a motion capture system (MoCap). The proposed solution is capable to ensure the temporal consistency, and allows for real-time acquisition at centimeter-level accuracy.
 
 ## Video results
+The first two videos attached to this repository show the impact of the spatial calibration and of the temporal calibration on the visualization of holograms. 
+The third video shows how it is possible to acquire a geo-referenced dataset by reversing the pipeline discussed in the paper. Later, such geo-referenced dataset can be used to reconstruct the 3D model of the acquired scene, which, thanks to the camera pose of the images is inclusive of its scale information and of the pose to geo-localise it. 
+Finally, the fourth video shows how the reconstructed model can be visualized in AR exploiting the pipeline previously defined.
+
+*Press one of the following pictures to be redirected to the video*
+
 ### Effect of the spatial calibration
 [![Spatial callibration](https://img.youtube.com/vi/uJmRfPYCVnI/0.jpg)](https://www.youtube.com/watch?v=uJmRfPYCVnI)
 
@@ -33,9 +37,6 @@ The 3D digitalization of contents and their visualization using Augmented Realit
 ### Visualization of 3D reconstructed models
 [![3D model visualization](https://img.youtube.com/vi/MiEEN89DyKM/0.jpg)](https://www.youtube.com/watch?v=MiEEN89DyKM)
 
-## Test
-[<img src="https://i.ytimg.com/vi/MiEEN89DyKM/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MiEEN89DyKM "Now in Android: 55")
-[<img src="https://i.ytimg.com/vi/MiEEN89DyKM/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MiEEN89DyKM "Now in Android: 55")
 
 ## Software implementation
 All source code used to generate the results and figures in the paper can be find in the folders of this repository. More in detail, the script used to compute the calibration matrix between the GNSS-RTK receiver and the Smartphone is located in the folder ``spatial_calibration``. In the same way the notebooks used to model the temporal delay between the two devices can be find in the folder ``temporal_calibration``. The folder ``general_data_processing`` encompasses some other notebooks used to process initial data coming from the two devices and are not discussed in the paper.
