@@ -52,8 +52,9 @@ git clone https://github.com/KevinDepedri/Spatial-Temporal-Calibration-for-Outdo
 
 or [download a zip archive](https://github.com/KevinDepedri/Spatial-Temporal-Calibration-for-Outdoor-Location-Based-Augmented-Reality/archive/refs/heads/main.zip).
 
+<!-- 
 A copy of the repository is also archived at *insert DOI here*
-
+-->
 
 ## Dependencies
 
