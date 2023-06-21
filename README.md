@@ -20,7 +20,7 @@ The 3D digitalization of contents and their visualization using Augmented Realit
 
 ## Results
 ### Effect of spatial calibration
-[![Video Name](https://img.youtube.com/vi/rSa9MkqMpCs/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Video Name](https://img.youtube.com/vi/rSa9MkqMpCs/0.jpg)](https://www.youtube.com/watch?v=rSa9MkqMpCs)
 ### Effect of temporal calibration
 <video src="https://www.youtube.com/shorts/rSa9MkqMpCs"></video>
 ### Visualization of AR contents with centimeter accuracy
