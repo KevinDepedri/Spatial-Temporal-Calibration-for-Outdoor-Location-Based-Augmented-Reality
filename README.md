@@ -21,10 +21,10 @@ The first two videos attached to this repository show the impact of the spatial 
 The 3D digitalization of contents and their visualization using Augmented Reality (AR) has gained a significant interest within the scientific community. Researchers from various fields have recognized the potential of these technologies and have been actively exploring their applications and implications. The potential lies in the ability to provide users with easy access to digitized information by seamlessly integrating contents directly into their field of view. One of the most promising approaches for outdoor scenarios is the so-called location-based AR, where contents are displayed by leveraging satellite positioning (as GNSS) combined with inertial (as IMUs) sensors. Although the number of application fields are numerous, the accuracy of the over-imposition of the additional contents still hinders a widespread adoption of such technologies. In this paper we propose the combination of a GNSS device equipped with real-time kinematic position (RTK), and a regular smartphone, implementing a novel offline calibration process that relies on a motion capture system (MoCap). The proposed solution is capable to ensure the temporal consistency, and allows for real-time acquisition at centimeter-level accuracy.
 
 ## Results
-### Effect of spatial calibration
+### Effect of the spatial calibration
 [![Spatial callibration](https://img.youtube.com/vi/uJmRfPYCVnI/0.jpg)](https://www.youtube.com/watch?v=uJmRfPYCVnI)
 
-### Effect of temporal calibration
+### Effect of the temporal calibration
 [![Temporal calibration](https://img.youtube.com/vi/bw9R_e6_UiI/0.jpg)](https://www.youtube.com/watch?v=bw9R_e6_UiI)
 
 ### Acquisition of geo-referenced images to build geo-referenced 3D models
