@@ -33,6 +33,9 @@ The 3D digitalization of contents and their visualization using Augmented Realit
 ### Visualization of 3D reconstructed models
 [![3D model visualization](https://img.youtube.com/vi/MiEEN89DyKM/0.jpg)](https://www.youtube.com/watch?v=MiEEN89DyKM)
 
+## Test
+[<img src="https://i.ytimg.com/vi/MiEEN89DyKM/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MiEEN89DyKM "Now in Android: 55")
+[<img src="https://i.ytimg.com/vi/MiEEN89DyKM/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=MiEEN89DyKM "Now in Android: 55")
 
 ## Software implementation
 All source code used to generate the results and figures in the paper can be find in the folders of this repository. More in detail, the script used to compute the calibration matrix between the GNSS-RTK receiver and the Smartphone is located in the folder ``spatial_calibration``. In the same way the notebooks used to model the temporal delay between the two devices can be find in the folder ``temporal_calibration``. The folder ``general_data_processing`` encompasses some other notebooks used to process initial data coming from the two devices and are not discussed in the paper.
