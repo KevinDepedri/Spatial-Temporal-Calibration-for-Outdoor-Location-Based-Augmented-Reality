@@ -5,7 +5,7 @@ Lorenzo Orlandi,
 Kevin Depedri,
 Nicola Conci
 
-This work is the result of the collaboration beetween **Arcoda s.r.l.** and the group **MMLab**
+This work is the result of the collaboration between **Arcoda s.r.l.** and the group **MMLab**
 
 This research is supported by the project **DIMOTY**, funded by the Autonomous Province of Trento under the **LP6/99** framework
 
