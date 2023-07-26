@@ -35,6 +35,9 @@ Finally, the fourth video shows how the reconstructed model can be visualized in
 ### Effect of the temporal calibration
 [![Temporal calibration](https://img.youtube.com/vi/bw9R_e6_UiI/0.jpg)](https://www.youtube.com/watch?v=bw9R_e6_UiI)
 
+### Computation of the angular error
+[![Angular Error Computation](https://img.youtube.com/vi/9mz47itsUDk/0.jpg)](https://www.youtube.com/watch?v=9mz47itsUDk)
+
 ### Acquisition of geo-referenced images to build geo-referenced 3D models
 [![Dataset acquisition](https://img.youtube.com/vi/Ynfc6QxaYrU/0.jpg)](https://www.youtube.com/watch?v=Ynfc6QxaYrU)
 
