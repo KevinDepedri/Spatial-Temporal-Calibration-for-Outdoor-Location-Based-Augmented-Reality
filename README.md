@@ -9,7 +9,7 @@ This work is the result of the collaboration between **Arcoda s.r.l.** and the g
 
 This research is supported by the project **DIMOTY**, funded by the Autonomous Province of Trento under the **LP6/99** framework
 
-This paper has been submitted for publication in *IEEE MMSP 2023*.
+This paper has been accepted at IEEE Sensor Journal 2024.
 
 In this paper we tackle the problem of accuracy for AR solutions developed using the location-based approach, where the pose of the AR contents that need to be visualized is expressed using geographic coordinates. More in detail, we propose a novel procedure to perform the spatial calibration between the smartphone used to visualize AR contents and an external GNSS-RTK receiver, used to acquire the position of the user in the world with centimeter-accuracy. Later, we face all the issue related to the temporal calibration between the two devices, proposing an experimental solution to model the delay between the devices and to mitigate it. Finally, the entire pipeline used to visualize AR contents depending on their geographical coordinates is described, explaining how each part of it works. 
 
